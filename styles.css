@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "DM Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background: rgb(12, 12, 12);
+    background-image: url(Img/GrainBG.png);
+    margin: 0;
+    padding: 0;
+    background-color:rgb(61, 4, 16);
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    transition: 0.6s;
+ }
+
+ .banner{
+    position:relative;
+
+ }
+
+header.logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+
+}
+
+ .logo img{
+    max-width: 80px;
+    height: auto;
+ }
+
+.navmenu{ /* Makes NAV aligned together */
+    display: flex;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    transform: scale(1.1);
+    color: rgb(157, 2, 33);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    size: 0cap;
+} 
+
+.nav-icon i{
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+ transform: scale(1.1);
+}
+    
+#menu-icon{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+.main-home{
+    width:100%;
+    height: 83vh;
+    background-image: url(Img/SFmainBan.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+
+.main-contact{
+    width:100%;
+    height: 83vh;
+    background-image: url(Img/contact-banner.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text{ /* Make SPOTLIGHT TOUR Centered */
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 63%;
+    left: 91.5%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/* .main-text h1{
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text h2{
+    font-size: 17px;
+    margin-bottom: 20px;
+} */
+
+.main-btn{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(157, 2, 33);
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+.main-btn i{
+    align-items: center;
+}
+
+#BryarIMG{
+    width:100%;
+    height: 83vh;
+    background-image: url(Img/merchFINAL.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.sub-btn{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.sub-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+.sub-btn i{
+    vertical-align: middle;
+}
+
+.other-btn{ /* Make SPOTLIGHT TOUR Centered */
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: black;
+}
+
+header.sticky{
+    background-color: rgb(0, 0, 0);
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 /10%);
+}
+
+
+/*Dropbox*/
+
+.navmenu ul.sub-nav{
+    position: absolute;
+    background: black;
+    width: 30%;
+    height: 150px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14) -1px 0px 1px rgba(0, 0, 0, 0.14);
+    top: 25px;
+    left: 25;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navmenu ul.sub-nav li{
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0px;
+
+}
+
+.navmenu ul.sub-nav li:hover{
+    color: white;
+    box-shadow: 0;
+}
+
+.navmenu:hover ul.sub-nav{
+    visibility:visible;
+    opacity: 1;
+}
+
+
+/* MUSIC SECTION CSS */
+
+
+
+
+.center-text h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, auto));
+    gap: 2.8rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.95);
+}
+
+.price h4{
+    color: white;
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.price p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.music-btn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.music-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+.music-btn i{
+    vertical-align: middle;
+}
+
+.otherr-btn{ /* Make SPOTLIGHT TOUR Centered */
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 250%;
+    bottom: 70;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.otherrrr-btn{ /* Make SPOTLIGHT TOUR Centered */
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 345%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    text-align: center;
+}
+
+hr {    /*LINE */
+    border: .75px solid #ccc;
+    margin: 50px 0 60px;
+    background-position: center;
+  }
+
+
+
+.merch-btn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.merch-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+.merch-btn i{
+    vertical-align: center;
+}
+
+  .otherrr-btn{ /* Make SPOTLIGHT TOUR Centered */
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 230%;
+    bottom: 70;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* END SECTION */
+
+
+#BandMembers{
+    width:100%;
+    height: 100vh;
+    background-image: url(Img/AB-SF2.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-top: 120px;
+}
+
+.about-btn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.about-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+.about-btn i{
+    vertical-align: middle;
+}
+
+.otherrr-btn{ /* Make SPOTLIGHT TOUR Centered */
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 440%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.otherrr-btn h3{
+    font-size: 35px;
+    margin-bottom: -2;
+}
+
+.otherrr-btn h1{
+    margin-top: -8px;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+
+/*contact*/
+
+
+.contact{
+    background-color: rgb(61, 4, 16);
+    margin-top: 200px;
+}
+
+.contact.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact.row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem black;
+    border: .1rem solid black;
+
+}
+
+.contact .row .imageee{
+    flex: 1 1 40rem;
+}
+
+.contact .row .imageee img{
+    width:100%;
+    margin-bottom: -170px;
+    margin-top: -120px;
+}
+
+.contact p{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+.nav-icon{ /* Makes NAV aligned together */
+    display: flex;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+/* ABOUT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+.beg-about{
+    width:100%;
+    height: 90vh;
+    background-image: url(Img/AB_SF.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.about-text{ /* Make SPOTLIGHT TOUR Centered */
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about-text h3{
+    font-size: 35px;
+    margin-bottom: -2;
+}
+
+.about-text h1{
+    margin-top: -8px;
+    font-size: 70px;
+    margin-bottom: 15px;
+    color:white;
+}
+
+
+.back-text h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.back-text p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    line-height: 2.5em;
+}
+
+.ab-memb h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -100px;
+}
+
+
+#Sonya-Photocard {
+    width: 500px;
+    margin-left: auto;
+    float: left;
+    /* margin-bottom: 280px; */
+    margin-right: 40px;
+    margin-top: -150px;
+}
+
+.photo-1 h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align:left;
+    margin-top: 130px;
+} 
+
+.photo-1 p{
+    font-size: 16px;
+    line-height: 2.5em;
+    margin-bottom: 180px;
+} 
+
+
+
+#Dawson-Photocard {
+    width: 500px;
+    margin-left: auto;
+    height: auto;
+    float: right;
+
+    margin-left: 40px;
+    margin-right: -40px;
+    margin-top: -200px;
+}
+
+
+.photo-2 h2{
+    margin-bottom: 10px;
+    text-align:right;
+    font-size: 25px;
+    margin-right: 40px;
+} 
+
+.photo-2 p{
+    font-size: 16px;
+    line-height: 2.5em;
+    margin-bottom: 180px;
+} 
+
+#Zianna-Photocard {
+    width: 500px;
+    margin-left: auto;
+    float: left;
+    /* margin-top: 220px; */
+    margin-right: 40px;
+    margin-top: -170px;
+    margin-bottom: 40px;
+}
+
+.photo-3 h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align:left;
+} 
+
+.photo-3 p{
+    font-size: 16px;
+    line-height: 2.5em;
+    margin-bottom: 200px;
+} 
+
+#Brantly-Photocard {
+    width: 500px;
+    margin-left: auto;
+    float: right;
+    margin-left: 40px;
+    margin-top: -165px;
+    margin-bottom: 100px;
+}
+
+.photo-4 h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: right;
+} 
+
+.photo-4 p{
+    font-size: 16px;
+    line-height: 2.5em;
+} 
+
+
+
+
+
+
+/* INDIVIDUAL SHOP PAGE!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+#top-1 {
+    width: 460px;
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 40px;
+}
+
+/* #top-1:hover{
+
+} */
+
+.container-product {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.cont h6{
+    font-size: 16px
+}
+
+.cont h3{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cont h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.cont h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.cont span{
+    line-height: 2em;
+}
+
+.buy-btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+    margin-top: 16px;
+}
+
+
+.buy-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: none;
+}
+
+.buy-btn i{
+    vertical-align: middle;
+}
+
+.container-product select{
+    display: block;
+    padding: 5px 10px;;
+}
+
+.container-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+
+
+.main-shop h2{
+    margin-top: 50px;
+}
+
+.merch-shop h2{
+    margin-top: 50px;
+}
+
+.music-shop h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+/* TOUR DATES!!!!!!!!!!!!!!!!!!!! */
+
+
+
+.main-tour h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    gap: 50px;
+}
+
+.tour-btn{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 0px 25px;
+    transition: all .42s ease;
+    margin-left: 600px;
+    text-align: center;
+}
+
+.tour{ /* Makes NAV aligned together */
+    display: flex;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.dates {
+    text-align: left;
+}
+
+.tour-btn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+
+.main-tour a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.main-tour p{
+    margin-top: 0px;
+}
+
+
+
+
+
+
+/* CONTACT!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.back-text h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.back-text p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    line-height: 2.5em;
+}
+
+.cust-serv{
+    line-height: 2.5em;
+}
+
+.cust-serv h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+
+.cust-serv h3{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.cust-serv h4{
+    color:rgb(145, 26, 50);
+}
+
+
+
+/* .main-tour {
+    align-items: center;
+}
+
+.main-tour h2{
+    text-align: left;
+}
+
+.main-tour p{
+    text-align: center;
+}
+
+.tour-btn{
+    float: right;
+    top: 30px;
+} */
+
+
+
+
+
+
+
+
+/*.dates{ /* Makes NAV aligned together
+    display: flex;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.dates a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 100px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.dates a:hover{
+    transform: scale(1.1);
+    color: rgb(157, 2, 33);
+} */
+
+
+
+/*RESPONSIVE CSS*/
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px){
+    .main-btn h1{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}

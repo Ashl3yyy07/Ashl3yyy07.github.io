@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Fright</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<body>
+   
+    <header>
+        <a href="index.html" class="logo"><img src="Img/1SF.png" alt="SF Logo"></a>
+        <ul class="navmenu">
+            <li class="logo"><a href="index.html"></a></li>
+            <li><a href= "about.html">About</a></li>
+            <li><a href= "shop.html">Shop</a></li>
+                <ul class="sub-nav">
+                    <li><a href= "music.html">Music</a></li>
+                    <li><a href= "merch.html">Merch</a></li>
+                    <li><a href= "shop.html">Shop All</a></li>
+                </ul>
+            <li><a href= "tour.html">Tour</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+    <!----------------START SECTION---------------->
+
+
+    <section class="container-product">
+        <div class="row">
+            <div class="cont">
+                <img class="img-fluid" src="imgshop/Ftop8.png" id="top-1" onmouseover="this.src='imgshop/Btop8.png'" onmouseout="this.src='imgshop/Ftop8.png'">
+            </div>
+            <div class="cont">
+                <h6>Shop / Merch</h6>
+                <h3>Stage Fright Pillow</h3>
+                <h2>20.00</h2>
+                <select class="my-3">
+                    <option>Select Shade</option>
+                    <option>Light Gray</option>
+                    <option>Dark Gray</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="buy-btn">Add to Cart</a>
+                <h4>Product Details</h4>
+                <span>A comfy Stage Fright pillow!</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact" id="contact">
+        <!-- <h1>Sign up for updates</h1> -->
+        <div class="row">
+            <!-- <form action="">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="name" placeholder="Email">
+                <input type="text" name="name" placeholder="Name">
+                <input type="submit" value="send message" class="btn">
+            </form> -->
+            <div class="imageee">
+                <img src="Img/Photocards.png" alt="">
+                <p>Stage Fright | Official Website</p>
+                <p>If you're having trouble using this website, please contact 507-398-9274</p>
+                <div class="nav-icon">
+                    <div class="bx bxl-instagram" id="menu-icon"></div>
+                    <div class="bx bxl-tiktok" id="menu-icon"></div>
+                    <div class="bx bxl-spotify" id="menu-icon"></div>
+                    <div class="bx bxl-youtube" id="menu-icon"></div>
+                    <div class="bx bxl-apple" id="menu-icon"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="java.js"></script>
+
+</body>
+</html>
