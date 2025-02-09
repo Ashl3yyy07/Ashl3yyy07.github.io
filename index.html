@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 </head>
-<body>
+<bod class="showCart">
    
     <header>
         <a href="index.html" class="logo"><img src="Img/1SF.png" alt="SF Logo"></a>
@@ -27,10 +27,30 @@
 
         <div class="nav-icon">
             <a href="#"><i class='bx bx-cart'></i></a>
-
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#"><i class='bx bx-menu' id="menu-bar"></i></a>
         </div>
     </header>
+
+
+<!--MENU BAR MOBILE -->
+    <div id="menu-page">
+        <div id="menu-page-wrapper">
+            <ul>
+                <li><a href= "about.html">About</a></li>
+                   
+                <li><a href= "music.html">Shop Music</a></li>
+                <li><a href= "merch.html">Shop Merch</a></li>
+                <li><a href= "shop.html">Shop All</a></li>
+                <li><a href= "tour.html">Tour</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+                <div class="cart-icon">
+                    <a href="#"><i class='bx bx-cart' id="bxcart"></i></a>
+                </div>
+
+            </ul>
+        </div>
+    </div> 
+
 
 
 
@@ -38,24 +58,23 @@
 
 
 
-    <section class="main-home">
+    <section class="main-home" alt="Main Stage Fright Banner">
         <div class="main-text">
             <!-- <h1>SPOTLIGHT TOUR</h1>
             <h2>See 2025 Midwestern Tour Dates</h2> -->
 
-            <a href="tour.html" class="main-btn">Learn More</a>
+            <a href="tour.html" class="main-btn">Tour Info</a>
         </div>
     </section>
 
 
-    <section id="BryarIMG">
+
+    <section id="BryarIMG" alt="Stage Fright Shop Banner">
         <div class="other-btn">
 
-        <a href="shop.html" class="sub-btn">View All</a>
+        <a href="shop.html" class="sub-btn">View Shop</a>
         </div>
     </section> 
-
-
 
 
 
@@ -72,7 +91,7 @@
 
         <div class="products">
             <div class="row">
-                <a href="mus1.html"><img src="imgshop/Fmus1.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus1.png'" onmouseout="this.src='imgshop/Fmus1.png'"></a>
+                <a href="mus1.html"><img src="imgshop/Fmus1.png" alt="Stage Fright Vinyl: Exclusive Edition Plus Member Photocards" onmouseover="this.src='imgshop/Bmus1.png'" onmouseout="this.src='imgshop/Fmus1.png'"></a>
                 
                 <div class="price">
                     <h4>SF Vinyl: Exclusive Edition + Extras</h4>
@@ -81,7 +100,7 @@
             </div>
 
             <div class="row">
-                <a href="mus2.html"><img src="imgshop/Fmus2.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus2.png'" onmouseout="this.src='imgshop/Fmus2.png'"></a>
+                <a href="mus2.html"><img src="imgshop/Fmus2.png" alt="Spotlight Vinyl: Exclusive Edition" onmouseover="this.src='imgshop/Bmus2.png'" onmouseout="this.src='imgshop/Fmus2.png'"></a>
                 
                 <div class="price">
                     <h4>SF Vinyl: Exclusive Edition</h4>
@@ -90,7 +109,7 @@
             </div>
 
             <div class="row">
-                <a href="mus3.html"><img src="imgshop/Fmus3.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus3.png'" onmouseout="this.src='imgshop/Fmus3.png'"></a>
+                <a href="mus3.html"><img src="imgshop/Fmus3.png" alt="Spotlight Vinyl" onmouseover="this.src='imgshop/Bmus3.png'" onmouseout="this.src='imgshop/Fmus3.png'"></a>
                 
                 <div class="price">
                     <h4>SF Original Vinyl</h4>
@@ -99,25 +118,30 @@
             </div>
 
             <div class="row">
-                <a href="mus4.html"><img src="imgshop/Fmus4.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus56.png'" onmouseout="this.src='imgshop/Fmus4.png'"></a>
+                <a href="mus4.html"><img src="imgshop/Fmus4.png" alt="Spotlight Exclusice CD" onmouseover="this.src='imgshop/Bmus56.png'" onmouseout="this.src='imgshop/Fmus4.png'"></a>
                 
-                <div class="price">
+                <div class="price" id="exclusiveCD">
                     <h4>SF Spotlight Exclusive CD</h4>
                     <p>$25.00</p>
                 </div>
             </div>
         </div>
 
-
-        <div class="otherr-btn">
-            <a href="music.html" class="music-btn">View All Music</a>
-
             
     </section>
     
 
+    <section id="View-Mus">
+        <div class="otherr-btn">
+            
+            <a href="music.html" class="music-btn">View All Music</a>
+            </div>
+    </section>
+
+
 
 <!-- MERCH SHOP SECTION -->
+
 
 
 
@@ -130,7 +154,7 @@
         <div class="products">
 
             <div class="row">
-                <a href="top1.html"><img src="Img/Ftop1.png" alt="Shirt1" onmouseover="this.src='Img/Btop1.png'" onmouseout="this.src='Img/Ftop1.png'"></a>
+                <a href="top1.html"><img src="Img/Ftop1.png" alt="Stage Fright Members Hoodie" onmouseover="this.src='Img/Btop1.png'" onmouseout="this.src='Img/Ftop1.png'"></a>
                 
                 <div class="price">
                     <h4>Stage Fright Members Hoodie</h4>
@@ -139,7 +163,7 @@
             </div>
 
             <div class="row">
-                <a href="top2.html"><img src="imgshop/Ftop2.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop2.png'" onmouseout="this.src='imgshop/Ftop2.png'"></a>
+                <a href="top2.html"><img src="imgshop/Ftop2.png" alt="Moth Hoodie" onmouseover="this.src='imgshop/Btop2.png'" onmouseout="this.src='imgshop/Ftop2.png'"></a>
                 
                 <div class="price">
                     <h4>Moth Hoodie</h4>
@@ -148,7 +172,7 @@
             </div>
 
             <div class="row">
-                <a href="top3.html"><img src="imgshop/Ftop3.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop3.png'" onmouseout="this.src='imgshop/Ftop3.png'"></a>
+                <a href="top3.html"><img src="imgshop/Ftop3.png" alt="Stage Fright Tour Hoodie" onmouseover="this.src='imgshop/Btop3.png'" onmouseout="this.src='imgshop/Ftop3.png'"></a>
                 
                 <div class="price">
                     <h4>Stage Fright Hoodie</h4>
@@ -157,69 +181,56 @@
             </div>
 
             <div class="row">
-                <a href="top4.html"><img src="imgshop/Ftop4.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop4.png'" onmouseout="this.src='imgshop/Ftop4.png'"></a>
+                <a href="top4.html"><img src="imgshop/Ftop4.png" alt="Stage Fright Tour Shirt with Tour Dates" onmouseover="this.src='imgshop/Btop4.png'" onmouseout="this.src='imgshop/Ftop4.png'"></a>
                 
                 <div class="price">
                     <h4>Spotlight Tour Shirt</h4>
                     <p>$30.00</p>
                 </div>
+                
             </div>
-        
 
 
-        <div class="otherrrr-btn">
+    </section>
+
+
+    <section id="View-Merch">
+        <div class="otherr-btn">
+            
             <a href="merch.html" class="merch-btn">View All Merch</a>
-
-
-        <!--<a href="shop.html" class="main-btn">View All Music</a> -->
-
+            </div>
     </section>
-
-
-
-
     
+
+<!------------MEET THE BAND------------->
+
+
+
     <section id="BandMembers">
-        <div class="otherrr-btn">
-            <h3>Meet</h3>
-            <h1>STAGE FRIGHT</h1>
-
-        <a href="about.html" class="about-btn">Learn More</a>
+        <div class="center-text">
+            <h2>MEET <br> STAGE FRIGHT</h2>
+            <a href="about.html" class="sub-btn" id="meet-btn">Learn More</a>
         </div>
-    </section>
-
+    </section> 
 
 
 
     <section class="contact" id="contact">
-        <!-- <h1>Sign up for updates</h1> -->
         <div class="row">
-            <!-- <form action="">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="name" placeholder="Email">
-                <input type="text" name="name" placeholder="Name">
-                <input type="submit" value="send message" class="btn">
-            </form> -->
             <div class="imageee">
-                <img src="Img/Photocards.png" alt="">
+                <img src="Img/Photocards2.png" alt="Band Member Photocards" id="BMphoto">
                 <p>Stage Fright | Official Website</p>
                 <p>If you're having trouble using this website, please contact 507-398-9274</p>
                 <div class="nav-icon">
-                    <div class="bx bxl-instagram" id="menu-icon"></div>
-                    <div class="bx bxl-tiktok" id="menu-icon"></div>
-                    <div class="bx bxl-spotify" id="menu-icon"></div>
-                    <div class="bx bxl-youtube" id="menu-icon"></div>
-                    <div class="bx bxl-apple" id="menu-icon"></div>
+                    <a href="https://www.instagram.com/stage.fright_official/" class="bx bxl-instagram" id="menu-icon" alt="Instagram Link"></a>
+                    <a href="https://www.tiktok.com/foryou?lang=en" class="bx bxl-tiktok"id="menu-icon"></a>
+                    <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&_locale=en-US" class="bx bxl-spotify" id="menu-icon" alt="Spotify link"></a>
+                    <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="bx bxl-youtube" id="menu-icon" alt="YouTube link"></a>
+                    <a href="https://music.apple.com/us/login/RK=2/RS=6U2_vHUPkeTxh_Yg8zP93ptMxZQ-" class="bx bxl-apple" id="menu-icon" alt="Apple Music Link"></a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-    <!-- <a href="#"><i class='bx bxl-instagram'></i></a>
-    <div class="bx bxl-tiktok" id="menu-icon"></div> -->
-
 
 
     <script src="java.js"></script>
