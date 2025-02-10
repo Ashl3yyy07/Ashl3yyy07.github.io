@@ -106,7 +106,7 @@ section{
 
 .main-home{
     width:100%;
-    height: 83vh;
+    height: 73vh;
     background-image: url(NEW/SFofficialbanner.png);
     background-position: center;
     display: flex;
@@ -115,7 +115,6 @@ section{
     position: relative;
     grid-template-columns: repeat(1, 1fr);
 }
-
 
 
 .main-contact{
@@ -131,7 +130,7 @@ section{
 
 .main-text{ /* Make SPOTLIGHT TOUR Centered */
     width: 100%;
-    right: 43px;
+    right: 30px;
     color: white;
     position: absolute;
     top: 80%;
@@ -193,7 +192,8 @@ section{
     width: 90%;
     color: white;
     position: absolute;
-    margin-top: 900px;
+    margin-top: 940px;
+    margin-bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -253,14 +253,26 @@ header.sticky{
     color: white;
     font-size: 60px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px; /*20*/
+}
+
+.center-text h3{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: -300px;
+}
+
+#meet-btn{
+    margin-top: -90px;
 }
 
 .products{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(265px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(215px, auto));
     gap: 2.8rem;
 }
+
 
 .row{
     position: relative;
@@ -293,6 +305,7 @@ header.sticky{
     margin-top: 5px;
 }
 
+
 .music-btn{
     display: inline-block;
     color: rgb(255, 255, 255);
@@ -301,7 +314,9 @@ header.sticky{
     border: 2px solid rgb(148, 5, 33);
     padding: 12px 25px;
     transition: all .42s ease;
+    
 }
+
 
 .music-btn:hover{
     background-color: rgb(148, 5, 33);
@@ -383,6 +398,7 @@ hr {    /*LINE */
     vertical-align: center;
 }
 
+
   .otherrr-btn{ /* Make SPOTLIGHT TOUR Centered */
     width: 90%;
     color: white;
@@ -408,7 +424,9 @@ hr {    /*LINE */
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 150px;
 }
+
 
 .about-btn{
     display: inline-block;
@@ -457,7 +475,6 @@ hr {    /*LINE */
 .contact{
     background-color: rgb(61, 4, 16);
     margin-top: 100px;
-
     
 }
 
@@ -477,11 +494,12 @@ hr {    /*LINE */
 
 
 .contact .row .imageee img{
-    width:1000px;
+    width:100%;
     margin-bottom: 30px;
+    height: 100%;
+    align-items: center;
     display: flex;
     margin-top: 30px;
-    align-self: center;
 }
 
 .contact p{
@@ -508,10 +526,15 @@ hr {    /*LINE */
 
 
 .beg-about{
-    width:100%;
-    height: 100vh;
-    background-image: url(NEW/AbSFfull.png);
-    background-size: cover;
+        width:100%;
+        height: 100vh;
+        background-image: url(NEW/AbSFfull.png);
+        background-position: center;
+        display: flex;
+        background-size: cover;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
 }
 
 .about-text{ /* Make SPOTLIGHT TOUR Centered */
@@ -553,7 +576,7 @@ hr {    /*LINE */
     text-align: center;
     padding: 5px 20px 20px 20px;
     font-size: 40px;
-    margin-bottom: -100px;
+    margin-bottom: -60px;
 }
 
 
@@ -580,32 +603,6 @@ hr {    /*LINE */
 } 
 
 
-
-#Dawson-Photocard {
-    width: 100%;
-    margin-left: auto;
-    height: auto;
-    float: right;
-
-    margin-left: 40px;
-    margin-right: -40px;
-    margin-top: -200px;
-}
-
-
-.photo-2 h2{
-    margin-bottom: 10px;
-    text-align:right;
-    font-size: 25px;
-    margin-right: 40px;
-} 
-
-.photo-2 p{
-    font-size: 16px;
-    line-height: 2.5em;
-    margin-bottom: 180px;
-} 
-
 #Zianna-Photocard {
     width: 100%;
     margin-left: auto;
@@ -627,6 +624,35 @@ hr {    /*LINE */
     line-height: 2.5em;
     margin-bottom: 200px;
 } 
+
+
+
+
+#Dawson-Photocard {
+    width: 100%;
+    margin-left: auto;
+    float: right;
+    margin-left: 40px;
+    margin-right: -40px;
+    margin-top: -200px;
+}
+
+
+.photo-2 h2{
+    margin-bottom: 10px;
+    text-align:right;
+    font-size: 25px;
+} 
+
+.photo-2 p{
+    font-size: 16px;
+    line-height: 2.5em;
+    margin-bottom: 180px;
+} 
+
+
+
+
 
 #Brantly-Photocard {
     width: 100%;
@@ -656,7 +682,6 @@ hr {    /*LINE */
     }
     }
 
-
 @media only screen and (min-width : 765px){ /* Not Phone  */
     #Sonya-Photocard{
     width: 500px;
@@ -681,7 +706,7 @@ hr {    /*LINE */
     /* margin-top: 220px; */
     margin-right: 40px;
     margin-top: -170px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #Brantly-Photocard {
@@ -690,7 +715,7 @@ hr {    /*LINE */
     float: right;
     margin-left: 40px;
     margin-top: -165px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 
@@ -718,7 +743,7 @@ hr {    /*LINE */
 #top-1 {
     width: 460px;
     float: left;
-    margin-bottom: 100px;
+    margin-bottom: 1000px;
     margin-right: 40px;
 }
 
@@ -803,8 +828,8 @@ hr {    /*LINE */
 }
 
 #BandMembers h2{
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 50px;
+    margin-bottom: -80px;
     margin-top: 100px;
 }
 
@@ -816,62 +841,10 @@ hr {    /*LINE */
 
 /* TOUR DATES!!!!!!!!!!!!!!!!!!!! */
 
-
-
-.main-tour h1{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 50px;
-    gap: 50px;
-}
-
-.tour-btn{
-    display: inline-block;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    border: 2px solid rgb(148, 5, 33);
-    padding: 0px 25px;
-    transition: all .42s ease;
-    margin-left: 600px;
-    text-align: center;
-}
-
-.tour{ /* Makes NAV aligned together */
-    display: flex;
-    position: relative;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-
-.dates {
-    text-align: left;
-}
-
-.tour-btn:hover{
-    background-color: rgb(148, 5, 33);
-    color: white;
-}
-
-
-.main-tour a{
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    padding: 10px 20px;
-    font-weight: 400;
-    transition: all .42s ease;
-}
-
-.main-tour p{
-    margin-top: 0px;
-}
-
-.tour-page{
+#TourPage{
     width:100%;
     height: 80vh;
+    object-fit:contain;
     background-image: url(Img/SFmainBan.png);
     background-position: center;
     background-size: cover;
@@ -879,112 +852,72 @@ hr {    /*LINE */
     position: relative;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    margin-bottom: -50px;
-
 }
+
+
+
+.box{
+    margin-top: 70px;
+    margin-left:70px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+    background-color:transparent;
+    border-width: .5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#tourB {
+    margin-top: -100px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+
+
+
+.box h2{
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-right: 25px;
+}
+
+.box p{
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+
+.box a{
+    float: right;
+}
+
+
+.tour-btnn{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgb(148, 5, 33);
+    padding: 12px 25px;
+    transition: all .42s ease;
+    
+}
+
+.tour-btnn:hover{
+    background-color: rgb(148, 5, 33);
+    color: white;
+}
+
+
+
+
+
+
 
 
 /* SHOPPING CART!! */
 
-.container{
-    width: 900px;
-    max-width: 90vw;
-    margin: auto;
-    text-align: center;
-    padding-top: 10px;
-    transition: transform .5s;
-}
-
-.listProduct .item button{
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-top: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.cartTab{
-    width:400px;
-    background-color: rgb(93, 4, 23);
-    color: white;
-    position: fixed;
-    inset: 0 0 0 auto;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    transition: .5s;
-}
-
-body.showCart .cartTab{
-    inset: 0 0 0 auto;
-}
-
-body.showCart .container{
-    transform: translate(-250px);
-}
-
-body.showCart .cartTab{
-    inset: 0 -400px 0 auto;
-}
-
-.cartTab h1{
-    padding: 20px;
-    margin: 0;
-    font-weight: 300;
-}
-
-.cartTab .btn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.cartTab .btn button{
-    background-color: rgb(121, 121, 121);
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.cartTab .btn .close{
-    background-color: white;
-}
-
-.cartTab .listCart .item img{
-    width: 100%;
-}
-
-.cartTab .listCart .item{
-    display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-}
-
-.listCart .quantity span{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.listCart .quantity span:nth-child(2){
-    background-color: transparent;
-    color: white;
-}
-
-.listCart .item:nth-child(even){
-    background-color: rgb(58, 58, 58);
-}
-
-.listCart{
-    overflow: auto;
-}
 
 
 
@@ -1065,7 +998,7 @@ body.showCart .cartTab{
 
     #BryarIMG{
         width:100%;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
         height: 830px;
         object-fit:contain;
         background-image: url(NEW/merchFINALphone.png);
@@ -1075,6 +1008,10 @@ body.showCart .cartTab{
         position: relative;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+    }
+
+    .other-btn{
+        margin-bottom: 50px;
     }
 
 
@@ -1116,7 +1053,7 @@ body.showCart .cartTab{
 
     #BandMembers{
         width:100%;
-        height: 40vh;
+        height: 45vh;
         background-image: url(NEW/AbSFrip.png);
         background-position: center;
         background-size: cover;
@@ -1126,6 +1063,10 @@ body.showCart .cartTab{
         margin-top: 120px;
         text-align: center;
         
+    }
+
+    .center-text h3{
+        font-size: 30px;
     }
 
     .main-text{ /* Make SPOTLIGHT TOUR Centered */
@@ -1172,8 +1113,691 @@ body.showCart .cartTab{
     
     
 
+    @media(max-width:1494px) and (min-width: 500px){ /* ipad1 screen / smaller comp */
+
+    
+        .main-home{
+            width:100%;
+            height: 70vh;
+            background-image: url(NEW/SFofficialbanner.png);
+            background-position: center;
+            display: flex;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        #BryarIMG{
+            width:100%;
+            margin-bottom: 30px;
+            height: 65vh;
+            object-fit:contain;
+            background-image: url(Img/merchFINAL.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+
+        .products{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+            gap: 2.8rem;
+        }
+
+        .other-btn{ /* Make SPOTLIGHT TOUR Centered */
+            width: 90%;
+            color: white;
+            position: absolute;
+            margin-top: 940px;
+            margin-bottom: 215px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .otherr-btn{ /* Make SPOTLIGHT TOUR Centered */
+            width: 100%;
+            color: white;
+            position: absolute;
+            left: 50%;
+            text-align: center;
+            margin-top: 510px;
+            transform: translate(-50%, -50%);
+        }
 
 
+
+    }
+
+
+
+
+    @media(max-width:1005px) and (min-width: 800px){ /* ipad2 screen / smaller comp */
+
+        .products{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+            gap: 2.8rem;
+        }
+
+        .main-home{
+            width:100%;
+            height: 55vh;
+            background-image: url(NEW/SFofficialbanner.png);
+            background-position: center;
+            display: flex;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #BryarIMG{
+            width:100%;
+            margin-bottom: 30px;
+            height: 55vh;
+            object-fit:contain;
+            background-image: url(Img/merchFINAL.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+
+        .other-btn{ /* Make SPOTLIGHT TOUR Centered */
+            width: 90%;
+            color: white;
+            position: absolute;
+            margin-top: 940px;
+            margin-bottom: 300px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+        #BandMembers{
+            width:100%;
+            height: 80vh;
+            background-image: url(NEW/AbSFrip.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            margin-top: 120px;
+            text-align: center;
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    @media(min-width: 800px){ /* ipad3 screen */
+    #menu-bar{
+        display: none;
+    } 
+}
+
+
+    @media(max-width:800px) and (min-width: 500px){ /* ipad3 screen */
+
+        .navmenu{
+            display: none;
+        }
+    
+        .menu-icon{
+            display: flex;
+        }
+
+        .products{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: 2.8rem;
+        }
+
+        .other-btn{ /* Make SPOTLIGHT TOUR Centered */
+            width: 90%;
+            color: white;
+            position: absolute;
+            margin-top: 830px;
+            margin-bottom: 300px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .main-home{
+            width:100%;
+            height: 50vh;
+            background-image: url(NEW/SFofficialbanner.png);
+            background-position: center;
+            display: flex;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #BryarIMG{
+            width:100%;
+            height: 45vh;
+            object-fit:contain;
+            background-image: url(Img/merchFINAL.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+
+        #BandMembers{
+            width:100%;
+            height: 75vh;
+            background-image: url(NEW/AbSFrip.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .otherr-btn{
+            margin-top: 500px;
+        }
+
+        .center-text h3{
+
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+    }
+
+
+
+    @media(max-width:650px) and (min-width: 500px){ /* ipad3 screen */
+
+        #BryarIMG{
+            width:100%;
+            height: 35vh;
+            object-fit:contain;
+            background-image: url(Img/merchFINAL.png);
+            background-position: center;
+            background-size: cover;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+
+    }
+
+
+
+/* ------------- SHOP ALL ---------------------------*/
+
+
+    @media(max-width:1389px) and (min-width: 1050px){ /* ipad3 screen */
+        .main-shope{
+            height: 38vh;
+        }
+
+    }
+
+    @media(max-width:1050px) and (min-width: 835px){ /* ipad3 screen */
+        .main-shope{
+            height: 30vh;
+        }
+    }
+
+    @media(max-width:835px) and (min-width: 680px){ /* ipad3 screen */
+            .main-shope{
+                height: 24vh;
+        }
+
+    }
+
+    @media(max-width:680px) and (min-width: 500px){ /* ipad3 screen */
+        .main-shope{
+            height: 39vh;
+        }
+
+        .main-shope{
+            background-image: url(NEW/SHOPbanner2.png);
+        }
+    }
+
+    @media(max-width:500px) and (min-width: 450px){ /* ipad3 screen */
+        .main-shope{
+            height: 29vh;
+        }
+
+        .main-shope{
+            background-image: url(NEW/SHOPbanner2.png);
+        }
+    }
+
+    @media(max-width:450px) and (min-width: 100px){ /* ipad3 screen */
+        .main-shope{
+            height: 25.8vh;
+        }
+
+        .main-shope{
+            background-image: url(NEW/SHOPbanner2.png);
+        }
+    }
+
+     
+
+
+
+
+/* ---------------------- ABOUT PAGE -------------------*/
+
+
+
+@media(max-width:1175px) and (min-width: 915px){ /* ipad3 screen */
+    .beg-about{
+        height: 70vh;
+    }
+}
+
+@media(max-width:915px) and (min-width: 670px){ /* ipad3 screen */
+    .beg-about{
+        height: 52vh;
+    }
+}
+
+@media(max-width:670px) and (min-width: 555px){ /* ipad3 screen */
+    .beg-about{
+        height: 42vh;
+    }
+}
+
+@media(max-width:555px) and (min-width: 420px){ /* ipad3 screen */
+    .beg-about{
+        height: 32vh;
+    }
+}
+
+@media(max-width:420px) and (min-width: 100px){ /* ipad3 screen */
+    .beg-about{
+        height: 25vh;
+    }
+}
+
+
+@media(max-width:700px){ /*Bring text down below pics for about the members */
+    .ab-memb h2 {
+        margin-bottom: -20px;
+    }
+
+}
+
+
+@media(max-width:670px)and (min-width:500px){ /*PHONE TEXT*/
+    .about-text h3{
+        font-size: 30px;
+    }
+
+    .about-text h1{
+        font-size: 45px;
+    }
+
+
+
+    .back-text h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .back-text p{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: -30px;
+        line-height: 2.5em;
+}
+
+}
+
+
+@media(max-width:500px){
+    .about-text h3{
+        font-size: 20px;
+    }
+
+    .about-text h1{
+        font-size: 35px;
+    }
+
+
+
+    .back-text h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .back-text p{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: -30px;
+        line-height: 2.5em;
+    }
+
+    .ab-memb h2 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .photo-1 p{
+        font-size: 12px;
+    } 
+    .photo-2 p{
+        font-size: 12px;
+    } 
+    .photo-3 p{
+        font-size: 12px;
+    } 
+    .photo-4 p{
+        font-size: 12px;
+    } 
+
+
+
+}
+
+
+@media(max-width:980px){ /*Bring text down below pics for about the members */
+
+#Sonya-Photocard {
+    width: 100%;
+    float: center;
+    /* margin-bottom: 280px; */
+    margin-right: 40px;
+    margin-top: -150px;
+    margin-bottom: 30px;
+}
+
+.photo-1 h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align:center;
+} 
+
+.photo-1 p{
+    line-height: 2.5em;
+    margin-bottom: 180px;
+} 
+
+
+#Zianna-Photocard {
+    width: 100%;
+    float: center;
+    /* margin-top: 220px; */
+    margin-right: 40px;
+    margin-top: -170px;
+    margin-bottom: 30px;
+}
+
+.photo-3 h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align:center;
+} 
+
+.photo-3 p{
+    line-height: 2.5em;
+    margin-bottom: 200px;
+} 
+
+
+
+#Dawson-Photocard {
+    width: 100%;
+    float: center;
+    margin-right: 0px;
+    margin-top: -200px;
+    margin-bottom: 30px;
+}
+
+
+.photo-2 h2{
+    margin-bottom: 10px;
+    text-align:center;
+    font-size: 25px;
+} 
+
+.photo-2 p{
+    line-height: 2.5em;
+    margin-bottom: 180px;
+} 
+
+#Brantly-Photocard {
+    width: 100%;
+    float: center;
+    margin-left: 40px;
+    margin-top: -165px;
+    margin-bottom: 30px;
+}
+
+.photo-4 h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+} 
+
+.photo-4 p{
+    line-height: 2.5em;
+    margin-bottom: 10px;
+} 
+
+
+}
+
+
+
+/*--------------- TOUR DATES -------------------*/
+
+
+@media(max-width:1110px) and (min-width: 900px){
+
+    #TourPage{
+        height: 60vh;
+    }
+
+}
+
+@media(max-width:900px) and (min-width: 785px){
+
+    #TourPage{
+        height: 52vh;
+    }
+
+}
+
+@media(max-width:785px) and (min-width: 650px){
+
+    #TourPage{
+        height: 42vh;
+    }
+
+}
+
+@media(max-width:650px) and (min-width: 540px){
+
+    #TourPage{
+        height: 35vh;
+    }
+
+}
+
+@media(max-width:540px) and (min-width: 426px){
+
+    #TourPage{
+        height: 28vh;
+    }
+
+}
+
+@media(max-width:426px) and (min-width: 100px){
+
+    #TourPage{
+        height: 22vh;
+    }
+
+}
+
+@media(max-width:700px){
+
+
+
+    .box h2{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .box p{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    
+
+    .tour-btnn{
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px solid rgb(148, 5, 33);
+        padding: 12px 25px;
+        transition: all .42s ease;
+        text-align:center;
+        
+    }
+
+
+}
+
+
+
+
+@media(max-width:1030px){  /* IND SHOP PAGE - IMAGE*/
+
+    #top-1 {
+        width: 665px;
+        float: center;
+        margin-bottom: 40px;
+        background-position: center;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-top: 30px;
+
+    }
+}
+
+
+@media(max-width:965px){  /* IND SHOP PAGE - IMAGE*/
+
+    #top-1 {
+        width: 665px;
+        float: center;
+        margin-bottom: 40px;
+        background-position: center;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+
+}
+
+
+
+
+
+
+/*--------------- TOUR DATES -------------------*/
+
+
+@media(max-width:1228px) and (min-width: 1070px){
+    .main-contact{
+        height: 75vh;
+    }
+}
+
+@media(max-width:1070px) and (min-width: 910px){
+    .main-contact{
+        height: 64vh;
+    }
+}
+
+@media(max-width:910px) and (min-width: 760px){
+    .main-contact{
+        height: 54vh;
+    }
+}
+
+@media(max-width:760px) and (min-width: 100px){
+    .main-contact{
+        height: 44vh;
+    }
+}
+
+@media(max-width:640px) and (min-width: 550px){
+    .main-contact{
+        height: 37vh;
+    }
+}
+
+@media(max-width:550px) and (min-width: 426px){
+    .main-contact{
+        background-image: url(/NEW/PHONEcontact.png);
+        height: 100vh;
+    }
+}
+
+@media(max-width:426px) and (min-width: 345px){
+    .main-contact{
+        background-image: url(/NEW/PHONEcontact.png);
+        height: 75vh;
+    }
+}
+
+@media(max-width:345px) and (min-width: 269px){
+    .main-contact{
+        background-image: url(/NEW/PHONEcontact.png);
+        height: 62vh;
+    }
+}
+
+@media(max-width:269px) and (min-width: 0px){
+    .main-contact{
+        background-image: url(/NEW/PHONEcontact.png);
+        height: 50vh;
+    }
+}
 
 
 

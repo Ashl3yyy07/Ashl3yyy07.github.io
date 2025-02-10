@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 </head>
-<body>
+<bod class="showCart">
    
     <header>
         <a href="index.html" class="logo"><img src="Img/1SF.png" alt="SF Logo"></a>
@@ -27,25 +27,140 @@
 
         <div class="nav-icon">
             <a href="#"><i class='bx bx-cart'></i></a>
-
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#"><i class='bx bx-menu' id="menu-bar"></i></a>
         </div>
     </header>
 
 
+<!--MENU BAR MOBILE -->
+    <div id="menu-page">
+        <div id="menu-page-wrapper">
+            <ul>
+                <li><a href= "about.html">About</a></li>
+                   
+                <li><a href= "music.html">Shop Music</a></li>
+                <li><a href= "merch.html">Shop Merch</a></li>
+                <li><a href= "shop.html">Shop All</a></li>
+                <li><a href= "tour.html">Tour</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+                <div class="cart-icon">
+                    <a href="#"><i class='bx bx-cart' id="bxcart"></i></a>
+                </div>
+
+            </ul>
+        </div>
+    </div> 
+
     <!-------------------------------------------------->
 
+    
+
+    <section class="main-shope">
+        <div class="main-shoppp">
+            <!-- <h1>SPOTLIGHT TOUR</h1>
+            <h2>See 2025 Midwestern Tour Dates</h2> -->
+        </div>
+    </section>
+    
 
 
-    <section class="merch-shop" id="merch">
+
+    <section class="music-shop" id="music">
         <div class="center-text">
-            <h2>Shop</h2>
+            <h2>Shop All</h2>
         </div>
 
-
-        
         <div class="products">
+            <div class="row">
+                <a href="mus1.html"><img src="imgshop/Fmus1.png" alt="Stage Fright Vinyl: Exclusive Edition Plus Member Photocards" onmouseover="this.src='imgshop/Bmus1.png'" onmouseout="this.src='imgshop/Fmus1.png'"></a>
+                
+                <div class="price">
+                    <h4>SF Vinyl: Exclusive Edition + Extras</h4>
+                    <p>$60.00</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <a href="mus2.html"><img src="imgshop/Fmus2.png" alt="Spotlight Vinyl: Exclusive Edition" onmouseover="this.src='imgshop/Bmus2.png'" onmouseout="this.src='imgshop/Fmus2.png'"></a>
+                
+                <div class="price">
+                    <h4>SF Vinyl: Exclusive Edition</h4>
+                    <p>45.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="mus3.html"><img src="imgshop/Fmus3.png" alt="Spotlight Vinyl" onmouseover="this.src='imgshop/Bmus3.png'" onmouseout="this.src='imgshop/Fmus3.png'"></a>
+                
+                <div class="price">
+                    <h4>SF Original Vinyl</h4>
+                    <p>$30.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="mus4.html"><img src="imgshop/Fmus4.png" alt="Spotlight Exclusice CD" onmouseover="this.src='imgshop/Bmus56.png'" onmouseout="this.src='imgshop/Fmus4.png'"></a>
+                
+                <div class="price" id="exclusiveCD">
+                    <h4>SF Spotlight Exclusive CD</h4>
+                    <p>$25.00</p>
+                </div>
+            </div>
+        </div>
+
+            
+    </section>
+
+
+
+
+    <section class="music-shop" id="music">
+
+        <div class="products">
+            <div class="row">
+                <a href="top5.html"><img src="imgshop/Ftop5.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop5.png'" onmouseout="this.src='imgshop/Ftop5.png'"></a>
+                    
+                <div class="price">
+                    <h4>Stage Fright Vinyl Hoodie</h4>
+                    <p>$45.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="top6.html"><img src="imgshop/Ftop6.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop6.png'" onmouseout="this.src='imgshop/Ftop6.png'"></a>
+                
+                <div class="price">
+                    <h4>Dawson Hoodie</h4>
+                    <p>$40.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="top7.html"><img src="imgshop/Ftop7.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop7.png'" onmouseout="this.src='imgshop/Ftop7.png'"></a>
+                
+                <div class="price">
+                    <h4>Stage Fright Gray Hoodie</h4>
+                    <p>$45.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="top8.html"><img src="imgshop/Ftop8.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop8.png'" onmouseout="this.src='imgshop/Ftop8.png'"></a>
+                
+                <div class="price">
+                    <h4>Stage Fright Pillow</h4>
+                    <p>$20.00</p>
+                </div>
+            </div>
+
+        </div>
+
+            
+    </section>
+
+    <section class="music-shop" id="music">
+
+        <div class="products">
             <div class="row">
                 <a href="top1.html"><img src="Img/Ftop1.png" alt="Shirt1" onmouseover="this.src='Img/Btop1.png'" onmouseout="this.src='Img/Ftop1.png'"></a>
                 
@@ -81,129 +196,88 @@
                     <p>$30.00</p>
                 </div>
             </div>
-        </section>    
 
+        </div>
 
+            
+    </section>
 
+    <section class="music-shop" id="music">
 
-
-        <section class="main-shop" id="shop!">
-    
-            <div class="products">
-                <div class="row">
-                    <a href="top5.html"><img src="imgshop/Ftop5.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop5.png'" onmouseout="this.src='imgshop/Ftop5.png'"></a>
+        <div class="products">
+            <div class="row">
+                <a href="mus5.html"><img src="imgshop/Fmus5.png" alt="Spotlight CD" onmouseover="this.src='imgshop/Bmus56.png'" onmouseout="this.src='imgshop/Fmus5.png'"></a>
                     
                     <div class="price">
-                        <h4>Stage Fright Vinyl Hoodie</h4>
-                        <p>$45.00</p>
+                        <h4>SF Spotlight CD</h4>
+                        <p>$15.00</p>
                     </div>
                 </div>
     
                 <div class="row">
-                    <a href="top6.html"><img src="imgshop/Ftop6.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop6.png'" onmouseout="this.src='imgshop/Ftop6.png'"></a>
+                    <a href="merch1.html"><img src="NEW/SFposter.PNG" alt="Band Poster"></a>
                     
                     <div class="price">
-                        <h4>Dawson Hoodie</h4>
-                        <p>$40.00</p>
+                        <h4>Stage Fright Tour Poster</h4>
+                        <p>15.00</p>
                     </div>
                 </div>
     
                 <div class="row">
-                    <a href="top7.html"><img src="imgshop/Ftop7.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop7.png'" onmouseout="this.src='imgshop/Ftop7.png'"></a>
+                    <a href="merch2.html"><img src="NEW/Ftote.png" alt="Stage Fright Tote Bag" onmouseover="this.src='NEW/Btote.png'" onmouseout="this.src='NEW/Ftote.png'"></a>
                     
                     <div class="price">
-                        <h4>Stage Fright Gray Hoodie</h4>
-                        <p>$45.00</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <a href="top8.html"><img src="imgshop/Ftop8.png" alt="Shirt1" onmouseover="this.src='imgshop/Btop8.png'" onmouseout="this.src='imgshop/Ftop8.png'"></a>
-                    
-                    <div class="price">
-                        <h4>Stage Fright Pillow</h4>
+                        <h4>Stage Fright Tote Bag</h4>
                         <p>$20.00</p>
                     </div>
                 </div>
-            </div>
-    
-        </section>
+
+                <div class="row">
+                    <a href="merch3.html"><img src="NEW/AngyToteF.png" alt="Stage Fright Hand Crochet Tote Bag" onmouseover="this.src='NEW/AngyToteF.png'" onmouseout="this.src='NEW/AngyToteF.png'" alt="AngyToteF"></a>
+                    
+                    <div class="price">
+                        <h4>Stage Fright Crochet Tote Bag</h4>
+                        <p>$35.00</p>
+                    </div>
+                </div>
+        </div>
+
+            
+    </section>
 
 
-        <section class="music-shop" id="music">
-    
-            <div class="products">
-                <div class="row">
-                    <a href="mus1.html"><img src="imgshop/Fmus1.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus1.png'" onmouseout="this.src='imgshop/Fmus1.png'"></a>
-                    
-                    <div class="price">
-                        <h4>SF Vinyl: Exclusive Edition + Extras</h4>
-                        <p>$60.00</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <a href="mus2.html"><img src="imgshop/Fmus2.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus2.png'" onmouseout="this.src='imgshop/Fmus2.png'"></a>
-                    
-                    <div class="price">
-                        <h4>SF Vinyl: Exclusive Edition</h4>
-                        <p>45.00</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <a href="mus3.html"><img src="imgshop/Fmus3.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus3.png'" onmouseout="this.src='imgshop/Fmus3.png'"></a>
-                    
-                    <div class="price">
-                        <h4>SF Original Vinyl</h4>
-                        <p>$30.00</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <a href="mus4.html"><img src="imgshop/Fmus4.png" alt="Shirt1" onmouseover="this.src='imgshop/Bmus56.png'" onmouseout="this.src='imgshop/Fmus4.png'"></a>
-                    
-                    <div class="price">
-                        <h4>SF Spotlight Exclusive CD</h4>
-                        <p>$25.00</p>
-                    </div>
-                </div>
-            </div>
 
-    
-                
-        </section>
+
+
 
 
 
         <section class="contact" id="contact">
             <!-- <h1>Sign up for updates</h1> -->
             <div class="row">
-                <!-- <form action="">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="name" placeholder="Email">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="submit" value="send message" class="btn">
-                </form> -->
                 <div class="imageee">
-                    <img src="Img/Photocards.png" alt="">
+                    <img src="Img/Photocards2.png" alt="">
                     <p>Stage Fright | Official Website</p>
                     <p>If you're having trouble using this website, please contact 507-398-9274</p>
                     <div class="nav-icon">
-                        <div class="bx bxl-instagram" id="menu-icon"></div>
-                        <div class="bx bxl-tiktok" id="menu-icon"></div>
-                        <div class="bx bxl-spotify" id="menu-icon"></div>
-                        <div class="bx bxl-youtube" id="menu-icon"></div>
-                        <div class="bx bxl-apple" id="menu-icon"></div>
+                        <a href="https://www.instagram.com/stage.fright_official/" class="bx bxl-instagram" id="menu-icon" alt="Instagram Link"></a>
+                        <a href="https://www.tiktok.com/foryou?lang=en" class="bx bxl-tiktok"id="menu-icon"></a>
+                        <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&_locale=en-US" class="bx bxl-spotify" id="menu-icon" alt="Spotify link"></a>
+                        <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="bx bxl-youtube" id="menu-icon" alt="YouTube link"></a>
+                        <a href="https://music.apple.com/us/login/RK=2/RS=6U2_vHUPkeTxh_Yg8zP93ptMxZQ-" class="bx bxl-apple" id="menu-icon" alt="Apple Music Link"></a>
                     </div>
                 </div>
             </div>
         </section>
-
-
-    <script src="java.js"></script>
-
-
-</section>
-</body>
-</html>
+    
+    
+    
+        <!-- <a href="#"><i class='bx bxl-instagram'></i></a>
+        <div class="bx bxl-tiktok" id="menu-icon"></div> -->
+    
+    
+    
+        <script src="java.js"></script>
+    
+    </body>
+    </html>
