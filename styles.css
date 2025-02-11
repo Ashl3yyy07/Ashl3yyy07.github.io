@@ -473,18 +473,30 @@ hr {    /*LINE */
 /*CONTACT PAGE*/
 
 
-.contacttt{
+.conttt{
     text-align: center;
-    margin-bottom: 30px;
-
+    margin-bottom: 0px;
+    margin-top: 7cap;
 }
 
-.contacttt{
+.conttt a{
     text-align: center;
-    color: #ccc;
+    color:rgb(154, 19, 46);
     margin-bottom: 30px;
-
+    font-size: 25px;
+    line-height: 1.8em;
 }
+
+.conttt h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.conttt .space-between{
+    justify-content: space-between;
+}
+
+
 
 
 .contact{
@@ -949,6 +961,7 @@ hr {    /*LINE */
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: -40px;
 }
 
 
@@ -959,11 +972,16 @@ hr {    /*LINE */
     max-width: 600px;
     width: 80%;
     margin: 0 auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 150px;
 }
 
 .booking-form h2{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .booking-form form{
@@ -1005,12 +1023,16 @@ hr {    /*LINE */
 }
 
 .cust-serv{
-    line-height: 2.5em;
+    line-height: 3em;
+    margin-bottom: -60px;
+    margin-top: -20px;
 }
 
 .cust-serv h2{
     font-size: 40px;
     margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -1021,7 +1043,36 @@ hr {    /*LINE */
 
 .cust-serv h4{
     color:rgb(145, 26, 50);
+    text-align: center;
+    font-size: 18px;
 }
+
+.cust-serv p{
+    text-align: center;
+}
+
+
+.serv{
+    line-height: 3em;
+}
+
+.serv h2{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+
+.serv h3{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.serv h4{
+    color:rgb(165, 21, 50);
+    font-size: 20px;
+    margin-top: 30px;
+}
+
 
 @media(max-width:890px){
     header{
@@ -1088,7 +1139,9 @@ hr {    /*LINE */
         margin-bottom: 50px;
     }
 
-
+    .booking-form{
+        margin-bottom: -60px;
+    }
 
     .main-btn{
         color: white;
@@ -1742,36 +1795,66 @@ hr {    /*LINE */
 
 }
 
-@media(max-width:700px){
+@media(max-width:500px){
 
-
+    .box{
+        margin-top: 25px;
+        margin-left:25px;
+        margin-right: 20px;
+    }
+    
 
     .box h2{
         margin-top: 25px;
-        text-align: center;
+        font-size: 20px;
+        margin-left: 20px;
     }
     
     .box p{
-        margin-top: 10px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
         line-height: 1.5em;
-        text-align: center;
+        font-size: 12px;
+        margin-left: 20px;
     }
     
 
     .tour-btnn{
         color: white;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
         border: 2px solid rgb(148, 5, 33);
-        padding: 12px 25px;
+        padding: 10px 20px;
         transition: all .42s ease;
         text-align:center;
         
     }
 
+    #tourB {
+        margin-top: -75px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    
+    
 
 }
+
+
+
+@media(max-width:700px)and(min-width:500px){
+.box{
+    margin-top: 25px;
+    margin-left:25px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+}
+}
+
+
+
+
 
 
 
