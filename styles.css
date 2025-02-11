@@ -147,6 +147,7 @@ section{
     padding: 12px 25px;
     transition: all .42s ease;
 }
+
 .main-btn:hover{
     background-color: rgb(148, 5, 33);
     color: white;
@@ -264,7 +265,7 @@ header.sticky{
 }
 
 #meet-btn{
-    margin-top: -90px;
+    margin-top: -20px;
 }
 
 .products{
@@ -469,7 +470,21 @@ hr {    /*LINE */
 }
 
 
-/*contact*/
+/*CONTACT PAGE*/
+
+
+.contacttt{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.contacttt{
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+
+}
 
 
 .contact{
@@ -924,6 +939,59 @@ hr {    /*LINE */
 /* CONTACT PAGE!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
+
+
+.background{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.booking-form{
+    background-color:rgb(93, 4, 23);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.booking-form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input{
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.booking-form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 .back-text h2{
     text-align: center;
     font-size: 40px;
@@ -983,6 +1051,11 @@ hr {    /*LINE */
         display: flex;
     }
 
+    .contact{
+        background-color: rgb(61, 4, 16);
+        margin-top: 300px;
+        
+    }
 
     .main-home{
         width:100%;
@@ -995,6 +1068,7 @@ hr {    /*LINE */
         position: relative;
         grid-template-columns: repeat(1, 1fr);
     }
+
 
     #BryarIMG{
         width:100%;
