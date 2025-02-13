@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "SF Vinyl: Exclusive + Extras",
+        "price": 60,
+        "image": "imgshop/Fmus1"
+    },
+
+    {
+        "id": 2,
+        "name": "SF Vinyl: Exclusive",
+        "price": 45,
+        "image": "imgshop/Fmus2"
+    },
+
+    {
+        "id": 3,
+        "name": "SF Vinyl",
+        "price": 30,
+        "image": "imgshop/Fmus3"
+    },
+
+    {
+        "id": 4,
+        "name": "SF CD: Exclusive",
+        "price": 25,
+        "image": "imgshop/Fmus4"
+    }
+
+]

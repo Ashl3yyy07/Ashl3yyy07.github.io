@@ -30,3 +30,56 @@ function accessCounter(spanElement){
         return document.querySelector('#nav')
     }
 }
+
+
+
+//SHOPPING CART
+
+let navicon = document.querySelector('.iconCart');
+let cart = document.querySelector('.cart');
+let container = document.querySelector('.container');
+let close = document.querySelector('.close');
+
+navicon.addEventListener('click', ()=>{
+    if(cart.style.right == '-100%'){
+        cart.style.right = '0';
+        container.style.transform = 'translateX(-400px)';
+    }else{
+        cart.style.right = '-100%' ;
+        container.style.transform = 'translateX(0)';
+
+    }
+
+})
+
+.close.addEventListener('click', ()=>{
+    cart.style.right = '-100%';
+    container.style.transform = 'translateX(0)';
+
+})
+
+let products = null;
+//get data from JSON file
+fetch('product.json')
+.then(response => response.json())
+.then(data => {
+    products = data;
+    addDataToHTML();
+})
+
+//show datas in list html
+function addDatatoHTML (){
+    //remove datas default to html
+    let listProductHTML = document.querySelector('.listProduct');
+    listProductHTML.innerHTML = '';
+
+    //add new datas
+
+    if(products != null){
+        products.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            
+        })
+    }
+}
